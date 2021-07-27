@@ -1,0 +1,31 @@
+<htmL>
+    <body>
+        <img src="https://th.bing.com/th/id/OIP.5WLioCGIYLqbM-PNnoS-hgHaJC?pid=ImgDet&rs=1"
+        style="width: 30%;" id="family_member_image">
+
+        <h4 id="family_member_name"></h4>
+        <button onclick="update();">Next</button>
+<var images =
+["https://i.pinimg.com/originals/36/07/38/360738aaa596e42b36830f330900e900.jpg","https://i.pinimg.com/474x/9e/43/2d/9e432dd715a57ffa3f7759a4e569655a.jpg",
+"https://www.clipartmax.com/png/middle/8-89057_cooking-mom-clipart-mom-cooking-clip-art.png",
+"https://www.pngfind.com/pngs/m/220-2205011_family-daddy-3-555px-dad-clipart-hd-png.png",];></var>
+
+<var names = ["Family book","Amol Bhingarde","Ashwin Bhingarde", "Nikhil Bhingarde","Isha Bhingarde"];></var>
+
+  <var i = 0
+  function update() 
+  {
+      i++;
+      var numbers_of_family_members_in_array = 4
+      if(i > numbers_of_family_members_in_array )
+
+      {
+          i = 0;
+      }
+      <var updatedImage = images[i];></var>
+      <var updatedName= names[i];></var>
+      document.getElementById("family_member_name").src = updatedName
+      document.getElementById("family_member_image").src = updatedImage
+
+    </body>
+</htmL>
